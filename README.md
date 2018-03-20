@@ -129,7 +129,7 @@ $html = '
 ';
 
 $google = file_get_contents('https://www.google.com', false, stream_context_create(array('http'=>array('header'  => 'User-agent: Mozilla/5.0 Firefox/40.1'))));
-echo HtmlQuerySelector($google, ':deep( .gb_Q.gb_R :nth-child(2) ) > a.gb_P')[0] . '<br><br>'; // Görseller
+echo HtmlQuerySelector($google, ':deep( .gb_Q.gb_R :nth-child(2) ) > a.gb_P')[0] . '<br><br>'; // Images
 
 $test = 'p > b';
 echo HtmlQuerySelector($html, $test)[0] . '<br>'; // #BOLD
